@@ -33,7 +33,9 @@ const requestHandler=(req,res)=>{
         })
     }
 }
-module.exports = {
+/*module.exports = {
     handler:requestHandler,
     Key:'Some Key'
-}
+}*/
+module.exports.handler=requestHandler
+module.exports.Key='Some Key'
