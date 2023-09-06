@@ -12,7 +12,7 @@ const requestHandler=(req,res)=>{
         res.setHeader('Content-Type','text/html');
         res.write('<html>');
         res.write('<head><title>First html Page</title></head>');
-        res.write(`<body style="text-align:center;"><h1>${fileContent}</h1><form action="/message" method="POST" ><input type="text" name="message" placeholder="Enter Message"><button type="submit">Send</button></form></body>`);
+        res.write(`<body style="text-align:center; color:teal;"><h1>${fileContent}</h1><form action="/message" method="POST" ><input type="text" name="message" placeholder="Enter Message"><button type="submit">Send</button></form></body>`);
         res.write('</html>');
         return res.end();
         }
@@ -33,7 +33,8 @@ const requestHandler=(req,res)=>{
         })
     }
 }
-/*module.exports = {
+/*
+module.exports = {
     handler:requestHandler,
     Key:'Some Key'
 }
